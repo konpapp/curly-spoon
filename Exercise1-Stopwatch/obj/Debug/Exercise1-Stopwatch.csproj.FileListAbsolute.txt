@@ -1,0 +1,7 @@
+C:\Users\gus-r\Desktop\C#\CSharpIntermediate\Section1\Exercise1-Stopwatch\Exercise1-Stopwatch\bin\Debug\Exercise1-Stopwatch.exe.config
+C:\Users\gus-r\Desktop\C#\CSharpIntermediate\Section1\Exercise1-Stopwatch\Exercise1-Stopwatch\bin\Debug\Exercise1-Stopwatch.exe
+C:\Users\gus-r\Desktop\C#\CSharpIntermediate\Section1\Exercise1-Stopwatch\Exercise1-Stopwatch\bin\Debug\Exercise1-Stopwatch.pdb
+C:\Users\gus-r\Desktop\C#\CSharpIntermediate\Section1\Exercise1-Stopwatch\Exercise1-Stopwatch\obj\Debug\Exercise1-Stopwatch.csprojAssemblyReference.cache
+C:\Users\gus-r\Desktop\C#\CSharpIntermediate\Section1\Exercise1-Stopwatch\Exercise1-Stopwatch\obj\Debug\Exercise1-Stopwatch.csproj.CoreCompileInputs.cache
+C:\Users\gus-r\Desktop\C#\CSharpIntermediate\Section1\Exercise1-Stopwatch\Exercise1-Stopwatch\obj\Debug\Exercise1-Stopwatch.exe
+C:\Users\gus-r\Desktop\C#\CSharpIntermediate\Section1\Exercise1-Stopwatch\Exercise1-Stopwatch\obj\Debug\Exercise1-Stopwatch.pdb
