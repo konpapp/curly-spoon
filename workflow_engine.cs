@@ -22,7 +22,7 @@ namespace Exercise5_WorkflowEngine
             pictureWorkflow.Add(new SendNotification());
             pictureWorkflow.Add(new SetStatus());
 
-            var pictureEngine = new WorkflowEngine(videoWorkflow);
+            var pictureEngine = new WorkflowEngine(pictureWorkflow);
             pictureEngine.Run();
         }
     }
