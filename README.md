@@ -2,7 +2,7 @@
 Selection of programs and scripts in Python and C#:
 
 blackjack.py: 
-  Blackjack game. Set bet, and compete the AI opponent in scoring more points than him, with max at 21.
+Blackjack game. Set bet, and compete the AI opponent in scoring more points than him, with max at 21.
 
 db_connect.cs:
   Template program for connecting to a database (SQL, Oracle) and executing commands.
