@@ -20,7 +20,7 @@ stopwatch.cs:
   Stopwatch providing the duration between intervals.
 
 webpost.cs:
-  Representation of a public post on a website, where one can upvote, downvote and see status.
+  Representation of a public post in a website, where one can upvote, downvote and see status.
 
 workflow_engine.cs:
   Representation of a workflow engine for a defined set of activities for video or picture editing.
