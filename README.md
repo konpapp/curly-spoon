@@ -7,6 +7,9 @@ blackjack.py:
 db_connect.cs:
   Template program for connecting to a database (SQL, Oracle) and executing commands.
   
+greedy_change.c:
+  Greedy algorithm for minimum coins in change calculation.
+  
 page_scrapper.py:
   Wrap text from a webpage into a text file.
 
