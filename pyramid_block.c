@@ -19,11 +19,20 @@ int main(void)
         {
             printf(" ");
         }
-        //building pyramid
+        //building left pyramid
         for (int j = 0; j < i + 1; j++)
         {
             printf("#");
         }
+
+        printf("  ");
+
+         //building right pyramid
+        for (int j = 0; j < i + 1; j++)
+        {
+            printf("#");
+        }
+
         printf("\n");
     }
 }
