@@ -19,6 +19,9 @@ page_scrapper.py:
 pyramid_block.c:
   Create a pyramid block of hash characters.
 
+readability.c:
+  Providing the readability grade of a text according to Coleman-Liau index.
+
 ssh_connect.py:
   Connect with ssh in network computers and execute commands.
 
