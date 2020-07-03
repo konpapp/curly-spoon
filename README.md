@@ -4,6 +4,9 @@ Selection of programs and scripts in Python, C# and C:
 blackjack.py: 
   Blackjack game. Set bet, and compete the AI opponent in scoring more points than him, with max at 21.
   
+caesar_encryption.c:
+  "Rotate" plaintext to ciphertext based on key value.
+  
 credit_card_validity.c:
   Checking whether a credit (or debit) card is valid according to Luhn's Algorithm. Proving also credit card provider (American Express, MasterCard, or Visa).
 
