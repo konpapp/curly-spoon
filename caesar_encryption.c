@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+const int alphabetDigits = 26;
+
 int main(int argc, string argv[])
 {
     //check for integer key
@@ -13,7 +15,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    //check fif all digits integers
+    //check if all digits integers
     for (int i = 0, n = strlen(argv[1]); i < n; i++)
     {
         if (!isdigit(argv[1][i]))
@@ -33,9 +35,9 @@ int main(int argc, string argv[])
     printf("ciphertext: ");
 
     //minimize key value inside alphabetical range
-    while (key > 26)
+    while (key > alphabetDigits)
     {
-        key = key % 26;
+        key = key % alphabetDigits;
     }
 
     int buffer;
@@ -47,7 +49,7 @@ int main(int argc, string argv[])
         {
             while (buffer > 'z')
             {
-                buffer -= 26;
+                buffer -= alphabetDigits;
             }
             ciphertext[i] = buffer;
         }
@@ -56,7 +58,7 @@ int main(int argc, string argv[])
         {
             while (buffer > 'Z')
             {
-                buffer -= 26;
+                buffer -= alphabetDigits;
             }
             ciphertext[i] = buffer;
         }
