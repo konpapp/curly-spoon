@@ -33,6 +33,9 @@ stack.cs:
   
 stopwatch.cs:
   Stopwatch providing the duration between intervals.
+  
+substitution.c:
+  Encrypt plaintext to ciphertext by substituting alphabetical characters according to command-line argument key.
 
 webpost.cs:
   Representation of a public post on a website, where one can upvote, downvote and see status.
