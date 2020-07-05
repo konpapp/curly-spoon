@@ -28,6 +28,9 @@ pyramid_block.c:
 readability.c:
   Providing the readability grade of a text according to Coleman-Liau index.
 
+runoff_election.c:
+  Program that runs a runoff election. Each voter submits 3 candidate choices that are ranked, and multiple runoffs are conducted until there is one winner candidate with the most votes.
+
 ssh_connect.py:
   Connect with ssh in network computers and execute commands.
 
