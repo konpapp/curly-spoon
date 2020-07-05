@@ -18,6 +18,9 @@ greedy_change.c:
   
 page_scrapper.py:
   Wrap text from a webpage into a text file.
+  
+plurality_vote.c:
+  Calculate winner candidate(s) of plurality election.
 
 pyramid_block.c:
   Create a pyramid block of hash characters.
