@@ -2,7 +2,7 @@
 Selection of programs and scripts in C, C#, and Python:
 
 - **blackjack.py**\
-Blackjack game. Set bet, and compete the AI opponent in scoring more points than him, with max at 21.
+Blackjack game. Set bet, and compete the AI opponent in scoring more points, with max at 21.
   
 - **caesar_encryption.c**\
   "Rotate" plaintext to ciphertext based on key value.
