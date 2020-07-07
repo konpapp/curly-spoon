@@ -1,4 +1,4 @@
-# General programs and scripts.
+# General programs and scripts
 
 - **blackjack.py**\
 Blackjack game. Set bet, and compete the AI opponent in scoring more points, with max at 21.
