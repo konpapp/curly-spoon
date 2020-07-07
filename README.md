@@ -1,5 +1,5 @@
 # curly-spoon
-Selection of programs and scripts in Python, C# and C:
+Selection of programs and scripts in C, C#, and Python:
 
 - **blackjack.py**\
 Blackjack game. Set bet, and compete the AI opponent in scoring more points than him, with max at 21.
