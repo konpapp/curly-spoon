@@ -29,7 +29,7 @@ Blackjack game. Set bet, and compete the AI opponent in scoring more points than
   Providing the readability grade of a text according to Coleman-Liau index.
 
 - **runoff_election.c**\
-  Program that runs a runoff election. Each voter submits 3 candidate choices that are ranked, and multiple runoffs are conducted until there is one winner candidate with the most votes.
+  Program that runs a runoff election. Each voter submits their candidate choices in a ranked order, and there is one winner candidate with the most votes and highest rank.
 
 - **ssh_connect.py**\
   Connect with ssh in network computers and execute commands.
