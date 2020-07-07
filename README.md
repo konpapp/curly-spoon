@@ -1,6 +1,11 @@
 # curly-spoon
 Selection of programs and scripts in C, C#, and Python:
 
+1. ***CS50***\
+Folder containing programs and scripts created during HarvardX CS50 course.
+2. ***General***\
+Folder containing selections of personal programs and scripts.
+
 - **blackjack.py**\
 Blackjack game. Set bet, and compete the AI opponent in scoring more points, with max at 21.
 
