@@ -4,7 +4,7 @@ Selection of programs and scripts in C, C#, and Python:
 1. ***CS50***\
 Programs created during HarvardX CS50 course.
 2. ***General***\
-Personal portfolio.
+Personal portfolio of programs.
 
 - **blackjack.py**\
 Blackjack game. Set bet, and compete the AI opponent in scoring more points, with max at 21.
