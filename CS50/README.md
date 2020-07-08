@@ -24,3 +24,6 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
   
 - **substitution.c**\
   Encrypt plaintext to ciphertext by substituting alphabetical characters according to command-line argument key.
+
+- **tideman_election.c**\
+  Program that runs an election using the Tideman method (Ranked Pairs).
