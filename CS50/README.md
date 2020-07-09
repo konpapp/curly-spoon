@@ -5,7 +5,7 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
   "Rotate" plaintext to ciphertext based on key value.
   
 - **credit_card_validity.c**\
-  Checking whether a credit (or debit) card is valid according to Luhn's Algorithm. Proving also credit card provider (American Express, MasterCard, or Visa).
+  Checking whether a credit (or debit) card is valid according to Luhn's Algorithm and specifying credit card network.
   
 - **greedy_change.c**\
   Greedy algorithm for minimum coins in change calculation.
