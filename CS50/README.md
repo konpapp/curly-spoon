@@ -20,10 +20,10 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
   Providing the readability grade of a text according to Coleman-Liau index.
   
 - **runoff_election.c**\
-  Program that runs a runoff election. Each voter submits their candidate choices in a ranked order, and there is one winner candidate with the most votes and highest rank.
+  Program that runs an election by the runoff voting method (two-round system).
   
 - **substitution.c**\
   Encrypt plaintext to ciphertext by substituting alphabetical characters according to command-line argument key.
 
 - **tideman_election.c**\
-  Program that runs an election using the Tideman method (Ranked Pairs).
+  Program that runs an election by the Tideman method (ranked rairs).
