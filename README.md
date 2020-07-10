@@ -1,3 +1,4 @@
+[![HitCount](http://hits.dwyl.com/gusleak/curly-spoon.svg)](http://hits.dwyl.com/gusleak/curly-spoon)
 # curly-spoon
 Selection of programs and scripts in C, C#, and Python:
 
