@@ -22,6 +22,9 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
 - **readability.c**\
   Provides the readability grade of a text according to Coleman-Liau index.
   
+- **recover_JPG.c**\
+  Recovers deleted JPG images from a memory card.
+
 - **runoff_election.c**\
   Runs an election by the runoff voting method (two-round system).
   
