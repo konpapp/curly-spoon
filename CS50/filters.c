@@ -96,131 +96,28 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             averageGreen = 0;
             averageBlue = 0;
             count = 0;
-            //Pixels not on the edges
-            if (i > 0 && i < height - 1 && j > 0 && j < width - 1)
+
+            //Helper loops in the surrounding pixels to extract average for each RGB value
+            for (int z = i - 1; z <= i + 1; z++)
             {
-                //Helper loops in the surrounding pixels to extract average for each RGB value
-                for (int z = i - 1; z <= i + 1; z++)
+                //Skip iteration when out of bounds
+                if (z < 0 || z > height - 1)
                 {
-                    for (int k = j - 1; k <= j + 1; k++)
-                    {
-                        averageRed += image[z][k].rgbtRed;
-                        averageBlue += image[z][k].rgbtBlue;
-                        averageGreen += image[z][k].rgbtGreen;
-                        count++;
-                    }
+                    continue;
                 }
-            }
-            //Upper left corner
-            else if (i == 0 && j == 0)
-            {
-                for (int z = i; z <= i + 1; z++)
+                
+                for (int k = j - 1; k <= j + 1; k++)
                 {
-                    for (int k = j; k <= j + 1; k++)
+                    //Skip iteration when out of bounds
+                    if (k < 0 || k > width - 1)
                     {
-                        averageRed += image[z][k].rgbtRed;
-                        averageBlue += image[z][k].rgbtBlue;
-                        averageGreen += image[z][k].rgbtGreen;
-                        count++;
+                        continue;
                     }
-                }
-            }
-            //Upper right corner
-            else if (i == 0 && j == width - 1)
-            {
-                for (int z = i; z <= i + 1; z++)
-                {
-                    for (int k = j - 1; k <= j; k++)
-                    {
-                        averageRed += image[z][k].rgbtRed;
-                        averageBlue += image[z][k].rgbtBlue;
-                        averageGreen += image[z][k].rgbtGreen;
-                        count++;
-                    }
-                }
-            }
-            //Lower left corner
-            else if (i == height - 1 && j == 0)
-            {
-                for (int z = i - 1; z <= i; z++)
-                {
-                    for (int k = j; k <= j + 1; k++)
-                    {
-                        averageRed += image[z][k].rgbtRed;
-                        averageBlue += image[z][k].rgbtBlue;
-                        averageGreen += image[z][k].rgbtGreen;
-                        count++;
-                    }
-                }
-            }
-            //Lower right corner
-            else if (i == height - 1 && j == width - 1)
-            {
-                for (int z = i - 1; z <= i; z++)
-                {
-                    for (int k = j - 1; k <= j; k++)
-                    {
-                        averageRed += image[z][k].rgbtRed;
-                        averageBlue += image[z][k].rgbtBlue;
-                        averageGreen += image[z][k].rgbtGreen;
-                        count++;
-                    }
-                }
-            }
-            //First row
-            else if (i == 0)
-            {
-                for (int z = i; z <= i + 1; z++)
-                {
-                    for (int k = j - 1; k <= j + 1; k++)
-                    {
-                        averageRed += image[z][k].rgbtRed;
-                        averageBlue += image[z][k].rgbtBlue;
-                        averageGreen += image[z][k].rgbtGreen;
-                        count++;
-                    }
-                }
-            }
-            //First column
-            else if (j == 0)
-            {
-                for (int z = i - 1; z <= i + 1; z++)
-                {
-                    for (int k = j; k <= j + 1; k++)
-                    {
-                        averageRed += image[z][k].rgbtRed;
-                        averageBlue += image[z][k].rgbtBlue;
-                        averageGreen += image[z][k].rgbtGreen;
-                        count++;
-                    }
-                }
-            }
-            //Last row
-            else if (i == height - 1)
-            {
-                for (int z = i - 1; z <= i; z++)
-                {
-                    for (int k = j - 1; k <= j + 1; k++)
-                    {
-                        averageRed += image[z][k].rgbtRed;
-                        averageBlue += image[z][k].rgbtBlue;
-                        averageGreen += image[z][k].rgbtGreen;
-                        count++;
-                    }
-                }
-            }
-            //Last column
-            else if (j == width - 1)
-            {
-                for (int z = i - 1; z <= i + 1; z++)
-                {
-                    for (int k = j - 1; k <= j; k++)
-                    {
-                        averageRed += image[z][k].rgbtRed;
-                        averageBlue += image[z][k].rgbtBlue;
-                        averageGreen += image[z][k].rgbtGreen;
-                        count++;
-                    }
+                    
+                    averageRed += image[z][k].rgbtRed;
+                    averageBlue += image[z][k].rgbtBlue;
+                    averageGreen += image[z][k].rgbtGreen;
+                    count++;
                 }
             }
             //Blurred values into the temporary matrix
