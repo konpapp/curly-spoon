@@ -8,7 +8,7 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
   Checks whether a credit (or debit) card is valid according to Luhn's Algorithm and specifying card network.
   
 - **filters.c**\
-  Functions for image filtering (Grayscale, Sepia, Reflection, Blur).
+  Functions for image filtering (Grayscale, Sepia, Reflection, Blur, Edges).
   
 - **greedy_change.c**\
   Provides minimum coin distribution in change (Greedy Algorithm).
