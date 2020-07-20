@@ -239,3 +239,116 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     }
     return;
 }
+
+//Detect edges
+void edges(int height, int width, RGBTRIPLE image[height][width])
+{
+    RGBTRIPLE temp[height][width];
+
+    //Helper variables to calculate sums
+    float GxSumRed;
+    float GxSumGreen;
+    float GxSumBlue;
+
+    float GySumRed;
+    float GySumGreen;
+    float GySumBlue;
+
+    float sobelRed;
+    float sobelGreen;
+    float sobelBlue;
+
+    //Sobel operators
+    int Gx[3][3] =
+    {
+        {-1, 0, 1},
+        {-2, 0, 2},
+        {-1, 0, 1}
+    };
+    int Gy[3][3] =
+    {
+        {-1, -2, -1},
+        {0, 0, 0},
+        {1, 2, 1}
+    };
+
+    //For each pixel in the original image (height x width)
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            //Reseting the sum variables
+            GxSumRed = 0;
+            GxSumGreen = 0;
+            GxSumBlue = 0;
+
+            GySumRed = 0;
+            GySumGreen = 0;
+            GySumBlue = 0;
+
+            //For a 3x3 array with the center being the current image[i][j]
+            for (int z = - 1; z <= 1; z++)
+            {
+                //Skip iteration if outside matrix
+                if (i + z < 0 || i + z > height - 1)
+                {
+                    continue;
+                }
+
+                for (int k = - 1; k <= 1; k++)
+                {
+                    //Skip iteration if outside matrix
+                    if (j + k < 0 || j + k > width - 1)
+                    {
+                        continue;
+                    }
+
+                    //Multiply the Sobel operator to the corresponding image and calculate sums for Gx
+                    GxSumRed += Gx[z + 1][k + 1] * image[i + z][j + k].rgbtRed;
+                    GxSumGreen += Gx[z + 1][k + 1] * image[i + z][j + k].rgbtGreen;
+                    GxSumBlue += Gx[z + 1][k + 1] * image[i + z][j + k].rgbtBlue;
+
+                    //Multiply the Sobel operator to the corresponding image and calculate sums for Gy
+                    GySumRed += Gy[z + 1][k + 1] * image[i + z][j + k].rgbtRed;
+                    GySumGreen += Gy[z + 1][k + 1] * image[i + z][j + k].rgbtGreen;
+                    GySumBlue += Gy[z + 1][k + 1] * image[i + z][j + k].rgbtBlue;
+                }
+            }
+
+            //Calculate Sobel values based on formula: (Gx^2 + Gx^2)^(1/2)
+            sobelRed = sqrt(powf(GxSumRed, 2) + powf(GySumRed, 2));
+            sobelGreen = sqrt(powf(GxSumGreen, 2) + powf(GySumGreen, 2));
+            sobelBlue = sqrt(powf(GxSumBlue, 2) + powf(GySumBlue, 2));
+
+            //Cap values at 255
+            if (sobelRed > 255)
+            {
+                sobelRed = 255;
+            }
+            if (sobelGreen > 255)
+            {
+                sobelGreen = 255;
+            }
+            if (sobelBlue > 255)
+            {
+                sobelBlue = 255;
+            }
+
+            //Store values in the temporary array
+            temp[i][j].rgbtRed = round(sobelRed);
+            temp[i][j].rgbtGreen = round(sobelGreen);
+            temp[i][j].rgbtBlue = round(sobelBlue);
+        }
+    }
+
+    //Replace into the original image
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            image[i][j] = temp[i][j];
+        }
+    }
+
+    return;
+}
