@@ -13,7 +13,7 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
 - **filters.c**\
   Functions for image filtering (Grayscale, Sepia, Reflection, Blur, Edges).
   
-- **greedy_change.c**\
+- **greedy_change(.c)(.py)**\
   Provides minimum coin distribution in change (Greedy Algorithm).
   
 - **plurality_vote.c**\
