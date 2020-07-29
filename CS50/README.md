@@ -4,7 +4,7 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
 - **caesar_encryption.c**\
   "Rotates" plaintext to ciphertext based on key value.
   
-- **credit_card_validity.c**\
+- **credit_card_validity(.c)(.py)**\
   Checks whether a credit (or debit) card is valid according to Luhn's Algorithm and specifying card network.
   
 - **dictionary.c**\
