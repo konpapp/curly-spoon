@@ -19,7 +19,7 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
 - **plurality_vote.c**\
   Picks winner candidate(s) of plurality election.
 
-- **pyramid_block.c**\
+- **pyramid_block(.c)(.py)**\
   Creates a pyramid block of hash characters.
   
 - **readability.c**\
