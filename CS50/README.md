@@ -22,7 +22,7 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
 - **pyramid_block(.c)(.py)**\
   Creates a pyramid block of hash characters.
   
-- **readability.c**\
+- **readability(.c)(.py)**\
   Provides the readability grade of a text according to Coleman-Liau index.
   
 - **recover_JPG.c**\
