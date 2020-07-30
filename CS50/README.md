@@ -10,6 +10,9 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
 - **dictionary.c**\
   Loads a dictionary file and scans a text file tracking mispelled words. 
   
+- **dna.py**\
+  Reads a DNA sequence from a text file, and compares it to database (csv file format) to identify person.
+  
 - **filters.c**\
   Functions for image filtering (Grayscale, Sepia, Reflection, Blur, Edges).
   
