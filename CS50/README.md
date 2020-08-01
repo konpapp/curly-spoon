@@ -35,7 +35,7 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
   Runs an election by the runoff voting method (two-round system).
   
 - **sql_database.py**\
-  Imports csv file into SQL database, and executes SQL commands.
+  Imports .csv file into SQL database, and executes SQL commands.
  
 - **substitution.c**\
   Encrypts plaintext to ciphertext by substituting alphabetical characters.
