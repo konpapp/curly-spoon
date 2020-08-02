@@ -1,0 +1,56 @@
+.bgFormat
+{
+    background-color: powderblue;
+}
+
+.header
+{
+    text-align: center;
+    font-size: 64px;
+    font-family: helvetica;
+    margin: 50px;
+    color: indigo;
+}
+
+.subheader
+{
+    text-align: left;
+    color: darkmagenta;
+}
+
+.text
+{
+    text-align: left;
+    font-size: 20px;
+    font-family: verdana;
+}
+
+.button
+{
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    left: 50px;
+}
+
+.rightButton
+{
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    right: -50px;
+}
+
+.cardStyle
+{
+    margin: auto;
+}
+
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
