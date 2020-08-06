@@ -106,6 +106,7 @@ def buy():
 
         # Current price of shares
         stockPrice = lookup(symbol)["price"]
+        companyName = lookup(symbol)["name"]
         totalPrice = stockPrice * shares
 
         # Retrieve user cash balance from db and check versus current shares price
@@ -124,6 +125,7 @@ def buy():
         balance = currentCash - totalPrice
         db.execute(f"UPDATE users SET cash={balance} WHERE id={currentID}")
 
+    flash(f'{shares} shares of {companyName} purchased successfully!')
     return redirect("/")
 
 
@@ -258,6 +260,8 @@ def register():
 
         hashPass = generate_password_hash(password)
         db.execute("INSERT INTO users (id, username, hash) VALUES (:ID, :username, :hashPass)", ID=ID, username=username, hashPass=hashPass)
+
+        flash('Registration successful!')
         return redirect("/")
 
 @app.route("/sell", methods=["GET", "POST"])
@@ -290,6 +294,7 @@ def sell():
 
         # Current price of shares
         stockPrice = lookup(symbol)["price"]
+        companyName = lookup(symbol)["name"]
         totalPrice = stockPrice * selledShares
 
         shares = ownedShares - selledShares
@@ -302,7 +307,7 @@ def sell():
 
         balance = currentCash + totalPrice
         db.execute(f'UPDATE users SET cash={balance} WHERE id={session["user_id"]}')
-
+    flash(f'{selledShares} shares of {companyName} sold!')
     return redirect("/")
 
 
@@ -316,3 +321,4 @@ def errorhandler(e):
 # Listen for errors
 for code in default_exceptions:
     app.errorhandler(code)(errorhandler)
+
