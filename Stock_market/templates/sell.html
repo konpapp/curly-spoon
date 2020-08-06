@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <!-- Example single primary button -->
+        <div class="form-group">
+            <select class="form-control" name="symbol">
+                <option value="select" disabled selected>Symbol</option>
+                {% for stock in currentShares %}
+                <option value="{{ stock }}">{{ stock }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="shares" placeholder="No. of Shares" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Sell</button>
+        <script>
+            document.querySelector('#dropdown').onchange = function ()
+            {
+                document.querySelector('stock').textContent = this.value;
+            }
+        </script>
+    </form>
+{% endblock %}

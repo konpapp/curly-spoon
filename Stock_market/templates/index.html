@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Overview
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Symbol</th>
+          <th scope="col">Name</th>
+          <th scope="col">Shares</th>
+          <th scope="col">Price</th>
+          <th scope="col">TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in overview %}
+        <tr>
+            {% for j in i %}
+            <td>{{ j }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        <tr>
+          <td>CASH</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>{{ balance }}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><b>{{  total }}</b></td>
+        </tr>
+      </tbody>
+    </table>
+{% endblock %}

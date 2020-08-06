@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Symbol</th>
+          <th scope="col">Name</th>
+          <th scope="col">Shares</th>
+          <th scope="col">Price</th>
+          <th scope="col">Transacted</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in overview %}
+        <tr>
+            {% for j in i %}
+            <td>{{ j }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+{% endblock %}
