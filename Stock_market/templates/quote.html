@@ -5,6 +5,10 @@
 {% endblock %}
 
 {% block main %}
+    <form class="form-group" action="http://eoddata.com/Search.aspx?" method="get">
+		<input autocomplete="off" class="form-control" name="s" type="text" placeholder="Company Name">
+		<input class="btn-secondary form-control" type="submit" value="Lookup Symbol">
+	</form>
     <form action="/quote" method="post">
         <div class="form-group">
             <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text">
