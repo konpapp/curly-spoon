@@ -6,7 +6,7 @@ Selection of programs and scripts.
 Programs created during HarvardX CS50 course.
 2. **General**\
 Personal portfolio.
-3. **Stock_market**\
-A web application of a stock market.
-4. **Homepage**\
+3. **Homepage**\
 My homepage.
+4. **Stock_market**\
+A web application of a stock market.
