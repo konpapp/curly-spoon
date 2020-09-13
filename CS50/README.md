@@ -7,7 +7,7 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
 - **credit_card_validity(.c)(.py)**\
   Checks whether a credit (or debit) card is valid according to Luhn's Algorithm and specifying card network.
   
-- **dictionary.c**\
+- **[dictionary.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/dictionary.c)**\
   Loads a dictionary file and scans a text file tracking mispelled words. 
   
 - **dna.py**\
