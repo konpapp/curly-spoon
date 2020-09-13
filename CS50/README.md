@@ -28,17 +28,17 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
 - **readability(.c)(.py)**\
   Provides the readability grade of a text according to Coleman-Liau index.
   
-- **recover_JPG.c**\
+- **[recover_JPG.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/recover_JPG.c)**\
   Recovers deleted JPG images from a memory card.
 
-- **runoff_election.c**\
+- **[runoff_election.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/runoff_election.c)**\
   Runs an election by the runoff voting method (two-round system).
   
-- **sql_database.py**\
+- **[sql_database.py](https://github.com/gusleak/curly-spoon/blob/master/CS50/sql_database.py)**\
   Imports .csv file into SQL database, and executes SQL commands.
  
-- **substitution.c**\
+- **[substitution.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/substitution.c)**\
   Encrypts plaintext to ciphertext by substituting alphabetical characters.
 
-- **tideman_election.c**\
+- **[tideman_election.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/tideman_election.c)**\
   Runs an election by the Tideman method (ranked rairs).
