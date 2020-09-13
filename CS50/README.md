@@ -16,16 +16,16 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
 - **[filters.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/filters.c)**\
   Functions for image filtering (Grayscale, Sepia, Reflection, Blur, Edges).
   
-- **greedy_change(.c)(.py)**\
+- **greedy_change([.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/greedy_change.c))([.py](https://github.com/gusleak/curly-spoon/blob/master/CS50/greedy_change.py))**\
   Provides minimum coin distribution in change (Greedy Algorithm).
   
 - **[plurality_vote.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/plurality_vote.c)**\
   Picks winner candidate(s) of plurality election.
 
-- **pyramid_block(.c)(.py)**\
+- **pyramid_block([.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/pyramid_block.c))([.py](https://github.com/gusleak/curly-spoon/blob/master/CS50/pyramid_block.py))**\
   Creates a pyramid block of hash characters.
   
-- **readability(.c)(.py)**\
+- **readability([.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/readability.c))([.py](https://github.com/gusleak/curly-spoon/blob/master/CS50/readability.py))**\
   Provides the readability grade of a text according to Coleman-Liau index.
   
 - **[recover_JPG.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/recover_JPG.c)**\
