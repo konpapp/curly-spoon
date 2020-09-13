@@ -4,7 +4,7 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
 - **[caesar_encryption.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/caesar_encryption.c)**\
   "Rotates" plaintext to ciphertext based on key value.
   
-- **credit_card_validity[(.c)](https://github.com/gusleak/curly-spoon/blob/master/CS50/credit_card_validity.c)[(.py)](https://github.com/gusleak/curly-spoon/blob/master/CS50/credit_card_validity.py)**\
+- **credit_card_validity([.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/credit_card_validity.c))([.py](https://github.com/gusleak/curly-spoon/blob/master/CS50/credit_card_validity.py))**\
   Checks whether a credit (or debit) card is valid according to Luhn's Algorithm and specifying card network.
   
 - **[dictionary.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/dictionary.c)**\
