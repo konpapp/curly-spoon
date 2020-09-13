@@ -10,16 +10,16 @@ Programs written during "CS50 - Introduction to Computer Science" by Harvard Uni
 - **[dictionary.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/dictionary.c)**\
   Loads a dictionary file and scans a text file tracking mispelled words. 
   
-- **dna.py**\
+- **[dna.py](https://github.com/gusleak/curly-spoon/blob/master/CS50/dna.py)**\
   Reads a DNA sequence from a text file, and compares it to database (csv file format) to identify matching person.
   
-- **filters.c**\
+- **[filters.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/filters.c)**\
   Functions for image filtering (Grayscale, Sepia, Reflection, Blur, Edges).
   
 - **greedy_change(.c)(.py)**\
   Provides minimum coin distribution in change (Greedy Algorithm).
   
-- **plurality_vote.c**\
+- **[plurality_vote.c](https://github.com/gusleak/curly-spoon/blob/master/CS50/plurality_vote.c)**\
   Picks winner candidate(s) of plurality election.
 
 - **pyramid_block(.c)(.py)**\
